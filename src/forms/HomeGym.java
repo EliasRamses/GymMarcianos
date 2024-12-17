@@ -78,13 +78,8 @@ public class HomeGym extends javax.swing.JFrame{
         Panel_Main = new javax.swing.JPanel();
         lbl_Nombre1 = new javax.swing.JLabel();
         lbl_Appelido1 = new javax.swing.JLabel();
-        txtNombre1 = new javax.swing.JTextField();
-        txtApellido1 = new javax.swing.JTextField();
-        lbl_FechaActual1 = new javax.swing.JLabel();
         lbl_Fecha1 = new javax.swing.JLabel();
-        btn_SaveMember1 = new javax.swing.JButton();
         lbl_TotalCosto1 = new javax.swing.JLabel();
-        lbl_CostoActual1 = new javax.swing.JLabel();
         lbl_Hora = new javax.swing.JLabel();
         lbl_RegistrarNuevo2 = new javax.swing.JLabel();
         Panel_AddUser = new javax.swing.JPanel();
@@ -259,58 +254,15 @@ public class HomeGym extends javax.swing.JFrame{
         lbl_Appelido1.setText("Apellido");
         lbl_Appelido1.setPreferredSize(new java.awt.Dimension(90, 30));
 
-        txtNombre1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtNombre1ActionPerformed(evt);
-            }
-        });
-
-        txtApellido1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtApellido1ActionPerformed(evt);
-            }
-        });
-
-        lbl_FechaActual1.setBackground(new java.awt.Color(204, 204, 204));
-        lbl_FechaActual1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        lbl_FechaActual1.setForeground(new java.awt.Color(51, 51, 51));
-        lbl_FechaActual1.setText("MM-dd-yyyy");
-        lbl_FechaActual1.setToolTipText("");
-        lbl_FechaActual1.setOpaque(true);
-        lbl_FechaActual1.setPreferredSize(new java.awt.Dimension(90, 30));
-
         lbl_Fecha1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         lbl_Fecha1.setForeground(new java.awt.Color(255, 255, 255));
         lbl_Fecha1.setText("Fecha");
         lbl_Fecha1.setPreferredSize(new java.awt.Dimension(90, 30));
 
-        btn_SaveMember1.setBackground(new java.awt.Color(102, 0, 51));
-        btn_SaveMember1.setFont(new java.awt.Font("Century Gothic", 0, 16)); // NOI18N
-        btn_SaveMember1.setForeground(new java.awt.Color(255, 255, 255));
-        btn_SaveMember1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/disco_32.png"))); // NOI18N
-        btn_SaveMember1.setText("Guardar Usuario");
-        btn_SaveMember1.setToolTipText("");
-        btn_SaveMember1.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 20, 1, 1));
-        btn_SaveMember1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        btn_SaveMember1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        btn_SaveMember1.setIconTextGap(20);
-        btn_SaveMember1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_SaveMember1ActionPerformed(evt);
-            }
-        });
-
         lbl_TotalCosto1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         lbl_TotalCosto1.setForeground(new java.awt.Color(255, 255, 255));
         lbl_TotalCosto1.setText("Total");
         lbl_TotalCosto1.setPreferredSize(new java.awt.Dimension(90, 30));
-
-        lbl_CostoActual1.setBackground(new java.awt.Color(204, 204, 204));
-        lbl_CostoActual1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        lbl_CostoActual1.setForeground(new java.awt.Color(51, 51, 51));
-        lbl_CostoActual1.setText("0");
-        lbl_CostoActual1.setOpaque(true);
-        lbl_CostoActual1.setPreferredSize(new java.awt.Dimension(90, 30));
 
         lbl_Hora.setFont(new java.awt.Font("Century Gothic", 0, 36)); // NOI18N
         lbl_Hora.setForeground(new java.awt.Color(255, 255, 255));
@@ -333,27 +285,16 @@ public class HomeGym extends javax.swing.JFrame{
                     .addGroup(Panel_MainLayout.createSequentialGroup()
                         .addGroup(Panel_MainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(Panel_MainLayout.createSequentialGroup()
-                                .addGap(68, 68, 68)
-                                .addComponent(btn_SaveMember1, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(Panel_MainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, Panel_MainLayout.createSequentialGroup()
-                                    .addGap(32, 32, 32)
-                                    .addComponent(txtNombre1, javax.swing.GroupLayout.PREFERRED_SIZE, 345, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(Panel_MainLayout.createSequentialGroup()
-                                    .addContainerGap()
-                                    .addGroup(Panel_MainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(lbl_Fecha1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(txtApellido1, javax.swing.GroupLayout.PREFERRED_SIZE, 345, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(lbl_FechaActual1, javax.swing.GroupLayout.PREFERRED_SIZE, 340, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addGap(32, 32, 32)
+                                .addComponent(lbl_Fecha1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(Panel_MainLayout.createSequentialGroup()
                                 .addGap(32, 32, 32)
                                 .addGroup(Panel_MainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(lbl_TotalCosto1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(Panel_MainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                         .addComponent(lbl_Appelido1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(lbl_Nombre1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(lbl_CostoActual1, javax.swing.GroupLayout.PREFERRED_SIZE, 340, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addGap(0, 579, Short.MAX_VALUE))
+                                        .addComponent(lbl_Nombre1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                        .addGap(0, 824, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Panel_MainLayout.createSequentialGroup()
                         .addGap(0, 585, Short.MAX_VALUE)
                         .addComponent(lbl_Hora, javax.swing.GroupLayout.PREFERRED_SIZE, 371, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -371,23 +312,13 @@ public class HomeGym extends javax.swing.JFrame{
                 .addComponent(lbl_Hora)
                 .addGap(44, 44, 44)
                 .addComponent(lbl_Nombre1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txtNombre1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28)
+                .addGap(70, 70, 70)
                 .addComponent(lbl_Appelido1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txtApellido1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(26, 26, 26)
+                .addGap(70, 70, 70)
                 .addComponent(lbl_Fecha1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lbl_FechaActual1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(62, 62, 62)
                 .addComponent(lbl_TotalCosto1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lbl_CostoActual1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(39, 39, 39)
-                .addComponent(btn_SaveMember1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(115, Short.MAX_VALUE))
+                .addContainerGap(248, Short.MAX_VALUE))
             .addGroup(Panel_MainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(Panel_MainLayout.createSequentialGroup()
                     .addGap(29, 29, 29)
@@ -545,31 +476,26 @@ public class HomeGym extends javax.swing.JFrame{
             jPanel_RigthLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel_RigthLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(Panel_Main, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btn_CloseMain)
                 .addContainerGap())
             .addGroup(jPanel_RigthLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(Panel_AddUser, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(38, Short.MAX_VALUE))
-            .addGroup(jPanel_RigthLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel_RigthLayout.createSequentialGroup()
-                    .addContainerGap()
-                    .addComponent(Panel_Main, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(28, Short.MAX_VALUE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel_RigthLayout.setVerticalGroup(
             jPanel_RigthLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel_RigthLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(btn_CloseMain)
-                .addGap(18, 18, Short.MAX_VALUE)
+                .addGroup(jPanel_RigthLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel_RigthLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(btn_CloseMain))
+                    .addComponent(Panel_Main, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(Panel_AddUser, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(53, 53, 53))
-            .addGroup(jPanel_RigthLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel_RigthLayout.createSequentialGroup()
-                    .addContainerGap(41, Short.MAX_VALUE)
-                    .addComponent(Panel_Main, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(43, 43, 43)))
         );
 
         javax.swing.GroupLayout jPanel_GeneralLayout = new javax.swing.GroupLayout(jPanel_General);
@@ -652,11 +578,13 @@ public class HomeGym extends javax.swing.JFrame{
     private void btn_HomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_HomeActionPerformed
         // TODO add your handling code here:
         Panel_AddUser.setVisible(false);
+        Panel_Main.setVisible(true);
     }//GEN-LAST:event_btn_HomeActionPerformed
 
     private void btn_AddUserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_AddUserActionPerformed
         // TODO add your handling code here:
         Panel_AddUser.setVisible(true);
+        Panel_Main.setVisible(false);
     }//GEN-LAST:event_btn_AddUserActionPerformed
 
     private void btn_CloseMainActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_CloseMainActionPerformed
@@ -669,18 +597,6 @@ public class HomeGym extends javax.swing.JFrame{
             System.exit(0);
         }
     }//GEN-LAST:event_btn_CloseMainActionPerformed
-
-    private void txtNombre1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombre1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtNombre1ActionPerformed
-
-    private void txtApellido1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtApellido1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtApellido1ActionPerformed
-
-    private void btn_SaveMember1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_SaveMember1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btn_SaveMember1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -731,7 +647,6 @@ public class HomeGym extends javax.swing.JFrame{
     private javax.swing.JButton btn_CloseSesion;
     private javax.swing.JButton btn_Home;
     private javax.swing.JButton btn_SaveMember;
-    private javax.swing.JButton btn_SaveMember1;
     private javax.swing.JButton btn_SearchUser;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -741,11 +656,9 @@ public class HomeGym extends javax.swing.JFrame{
     private javax.swing.JLabel lbl_Appelido;
     private javax.swing.JLabel lbl_Appelido1;
     private javax.swing.JLabel lbl_CostoActual;
-    private javax.swing.JLabel lbl_CostoActual1;
     private javax.swing.JLabel lbl_Fecha;
     private javax.swing.JLabel lbl_Fecha1;
     private javax.swing.JLabel lbl_FechaActual;
-    private javax.swing.JLabel lbl_FechaActual1;
     private static javax.swing.JLabel lbl_Hora;
     private javax.swing.JLabel lbl_Nombre;
     private javax.swing.JLabel lbl_Nombre1;
@@ -755,9 +668,7 @@ public class HomeGym extends javax.swing.JFrame{
     private javax.swing.JLabel lbl_TotalCosto1;
     public javax.swing.JLabel lbl_UserName;
     private javax.swing.JTextField txtApellido;
-    private javax.swing.JTextField txtApellido1;
     private javax.swing.JTextField txtNombre;
-    private javax.swing.JTextField txtNombre1;
     // End of variables declaration//GEN-END:variables
 
     /*@Override
